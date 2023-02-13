@@ -1,0 +1,5 @@
+SELECT NAME,DATETIME
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID DESC 
+
+# 본래는 위로 올라간다 asc 가 기본 값 

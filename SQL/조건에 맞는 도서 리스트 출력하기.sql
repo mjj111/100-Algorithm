@@ -1,0 +1,8 @@
+SELECT BOOK_ID,
+DATE_FORMAT(PUBLISHED_DATE, '%Y-%m-%d') AS PUBLISHED_DATE
+FROM BOOK 
+where category = '인문' and
+DATE_FORMAT(PUBLISHED_DATE,'%Y-%m-%d')
+BETWEEN DATE_FORMAT('2021-01-01' , '%Y-%m-%d') 
+AND  DATE_FORMAT('2021-12-31' , '%Y-%m-%d');
+                 

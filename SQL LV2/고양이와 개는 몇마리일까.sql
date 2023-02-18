@@ -1,0 +1,8 @@
+특정 컬럼을 그룹화 하는 GROUP BY 
+특정 컬럼을 그룹화한 결과에 조건을 거는 HAVING
+WHERE는 그룹화 하기 전이고, HAVING은 그룹화 후에 조건이다.
+
+SELECT DISTINCT ANIMAL_TYPE, COUNT(ANIMAL_TYPE) as count 
+FROM ANIMAL_INS
+GROUP BY ANIMAL_TYPE
+ORDER BY ANIMAL_TYPE

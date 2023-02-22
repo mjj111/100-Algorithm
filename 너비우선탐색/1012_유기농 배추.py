@@ -9,6 +9,7 @@ move_y = [0,0,-1,1]
 def bfs(x,y):
     deq = deque()
     deq.append([x,y])
+    procession[x][y] = 0
     while deq:
         now_x, now_y = deq.popleft()
         for i in range(4):
@@ -30,7 +31,6 @@ for i in range(t):
         for r in range(row):
             if procession[c][r] == 1:
                 bfs(c,r)
-                procession [c][r] = 0
                 result +=1 
     print(result)
 

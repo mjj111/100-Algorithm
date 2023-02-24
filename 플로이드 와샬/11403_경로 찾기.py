@@ -15,4 +15,4 @@ for k in range(0, N):   # 경유지를 위해
 
 
 for m in matrix:
-    print(*m)
+    print(m)

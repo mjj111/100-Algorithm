@@ -22,7 +22,6 @@ def topology_sort():
 
 n, m = map(int, sys.stdin.readline().split()) 
 indegree = [0] * n
-result = [1] * n
 graph = [[] for i in range(n)]
 
 for _ in range(m):

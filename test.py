@@ -1,3 +1,2 @@
-a= {}
-a[2]= 3
-print(a.get(1,'안녕'))
+for i in range(10,0,-1):
+    print(i)

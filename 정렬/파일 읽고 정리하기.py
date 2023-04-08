@@ -1,4 +1,3 @@
-import sys
 import csv
 import datetime
 
@@ -52,12 +51,6 @@ def read_csv(arg):
     csv_file_formatting()
     
     return
-
-
-
-def process_command():
-    command = input()
-    return command[:-1]
 
 
 csv_file = []

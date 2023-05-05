@@ -30,6 +30,8 @@ class Test{
         HashMap<Integer,Integer> hmap = new HashMap<>();
         hmap.put(1,2);
         System.out.println(hmap.get(1));
+
+        TreeSet<Integer> set1 = new TreeSet<Integer>();//TreeSet생성
         
     }
 }

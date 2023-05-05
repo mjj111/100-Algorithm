@@ -99,18 +99,7 @@ class BinarySearchTree(object):
         else:
             node.right, deleted = self._delete_value(node.right, key)
         return node, deleted     
-    
-    def print_node_data(self,result):
-        print(result[0])
-        print("\tCompany: ",result[1])
-        print("\tAddress: ",result[2])
-        print("\tZipcode: ",result[3])
-        print("\tPhone: ",result[4])
-        print("\tEmail: ",result[5])
-        print()
-        return  
-      
-    # 중위순회
+        # 중위순회
     def inorder_traverse(self):
         if self.root is not None:
             self.__inorder(self.root)
@@ -123,6 +112,18 @@ class BinarySearchTree(object):
         
         if node.right is not None:
             self.__inorder(node.right)
+            
+            
+    def print_node_data(self,result):
+        print(result[0])
+        print("\tCompany: ",result[1])
+        print("\tAddress: ",result[2])
+        print("\tZipcode: ",result[3])
+        print("\tPhone: ",result[4])
+        print("\tEmail: ",result[5])
+        print()
+        return  
+    
             
             
      # 저장을 위한 중위순회

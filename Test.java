@@ -1,37 +1,38 @@
 import java.util.*;
 class Test{
     public static void main(String[] args) {
-        String str = "hello";
-        // for (char s : str.toCharArray()){
-        //     System.out.println(s);
-        // }
-        int a = 212;
-        System.out.print(String.valueOf(a));
-        String as = "hi im mj";
-        String[] splitedString = as.split(" ");
-        for(String c : splitedString){
-            System.out.println(c);
-        }
-        System.out.println(as.indexOf("m"));
-        System.out.println(as.substring(0, 3));
+        ArrayList<Integer> arList = new ArrayList<Integer>();
+        ArrayList<Integer> copyW = new ArrayList<Integer>();
+        copyW.addAll(arList);
+        arList.add(1);
+        arList.add(3);
+        arList.add(2);
+        arList.add(1);
+        arList.sort(null);
+        arList.remove(0);
+        System.out.println(arList.toString());
         
-        StringBuffer reverseString = new StringBuffer(str);
-        System.out.print(reverseString.reverse().toString());
-        char aplhabet = 's';
-        System.out.println((int)aplhabet);
-        int aaa = Integer.valueOf(aplhabet);
-        System.out.println(aaa);
-        int num = 77;
-        String binum = Integer.toBinaryString(num);
-        System.out.println(binum);
-        int exA= 2;
-        int exB= 3;
-        System.out.println(Math.max(exA,exB));
-        HashMap<Integer,Integer> hmap = new HashMap<>();
-        hmap.put(1,2);
-        System.out.println(hmap.get(1));
+        Set<Integer> setList = new HashSet<Integer>();
+        setList.add(2);
 
-        TreeSet<Integer> set1 = new TreeSet<Integer>();//TreeSet생성
+        int [] arr = {1,2,3,4,5};
+        Arrays.sort(arr);
+        int [] tmp = Arrays.copyOfRange(arr,1,3);
         
+        String str = "12345";
+        char[] charArray = str.toCharArray();
+        System.out.println(charArray[0]);
+
+        Map<String,Integer> hmap = new HashMap<>();
+        hmap.put("h",1);
+        hmap.get("h");
+        hmap.getOrDefault("h",1);
+        hmap.containsKey("h");
+        System.out.println(hmap.get("not"));
+        Map<String,ArrayList<Integer>> biMap = new HashMap<>();
+        
+        String satr = "hello";
+        System.out.println(satr.toLowwerCase());
     }
+
 }

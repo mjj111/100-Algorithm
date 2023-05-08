@@ -32,7 +32,11 @@ class Test{
         Map<String,ArrayList<Integer>> biMap = new HashMap<>();
         
         String satr = "hello";
-        System.out.println(satr.toLowwerCase());
+        System.out.println(satr.toLowerCase());
+        String[] stringSplit = satr.split("");
+        String tmpString = satr.substring(0,3);
+        String strbuilder = new StringBuilder(satr).reverse().toString();
+        
     }
 
 }

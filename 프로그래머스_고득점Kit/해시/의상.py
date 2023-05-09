@@ -5,6 +5,6 @@ def solution(clothes):
         d[item] += 1
     
     answer = 1
-    for item,n in d.items():
+    for n in d.values():
         answer *= (n+1)
     return answer-1

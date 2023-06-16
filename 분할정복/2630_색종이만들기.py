@@ -13,7 +13,7 @@
 #        x를 x1, x2로 분할
 #        f(x1)과 f(x2) 호출 # 분할
 #        return f(x1), f(x2)로 구한 값 # 조합
-    
+
 def initialize_n_and_colored_paper():
     n = int(input())
     for _ in range(n):

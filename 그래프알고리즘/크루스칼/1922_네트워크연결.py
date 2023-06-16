@@ -10,12 +10,14 @@ def find(a):
     parent = find(parent[a])
     return parent[a]
 
-def union(a,b):
+def union(a, b):
     a = find(a)
     b = find(b)
-    if b < a:
-        parent[a] = b
+    if a < b:
         parent[b] = a
+    else:
+        parent[a] = b
+
         
         
 n = int(input())

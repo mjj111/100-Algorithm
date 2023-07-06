@@ -9,4 +9,4 @@ def solution(s):
             else:
                 stack.pop() 
     
-    return False if (stack) else True
+    return False if stack else True

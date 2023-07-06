@@ -14,3 +14,9 @@ def solution(genres, plays):
         for idx,nplay in musics:
             answer.append(idx)
     return answer
+
+#장르에 대해서 내림차순으로 접근할 수 있도록 각 장르의 종합 플레이 횟수를 저장한다.
+#장르별로 접근하게 되는데, 각 장르에 해당하는 곡들은 자신의 인덱스와 재생 수를 갖고있다.
+# 각 장르별로 저장되어 딕셔너리를 리스트화한 뒤에, 해당 리스트를 재생수별로 정렬한다.
+#정렬된 리스트별로 하나씩 접근하여answer에 담는다 .
+ 

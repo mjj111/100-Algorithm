@@ -3,8 +3,8 @@ def solution(participant, completion):
     dic = defaultdict(int)
     for i in participant:
         dic[i] += 1 
-    for j in completion:
-        dic[j] -= 1
-    for i in dic.keys():
-        if dic[i] == 1:
-            return i
+    for i in completion:
+        dic[i] -= 1
+    for key,value in dic.items():
+        if value == 1:
+            return key

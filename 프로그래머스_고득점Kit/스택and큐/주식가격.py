@@ -1,3 +1,4 @@
+
 from collections import deque 
 def solution(prices):
     answer = []
